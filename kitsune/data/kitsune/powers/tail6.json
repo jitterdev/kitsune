@@ -1,0 +1,19 @@
+{
+    "type": "origins:action_on_item_use",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:absorption",
+            "duration": 300,
+            "amplifier": 1
+        }
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:sweet_berries"
+        }
+    },
+    "name": "§16th Tail",
+	"description": "Sweet berries give 15 seconds of Absorption II upon consumption."
+}

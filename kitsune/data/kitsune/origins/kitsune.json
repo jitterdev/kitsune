@@ -1,0 +1,20 @@
+{
+    "powers": [
+        "kitsune:tails",
+        "kitsune:newtails",
+        "kitsune:scale",
+        "origins:tailwind",
+        "origins:fall_immunity",
+        "origins:no_shield",
+        "kitsune:tail9",
+        "kitsune:tail8",
+        "kitsune:tail7"
+        
+    ],
+    "loading_priority": 10,
+    "icon": "minecraft:sweet_berries",
+    "order": 2,
+    "impact": 3,
+    "name": "Kitsune",
+    "description": "A benevolant being under the fox lineage."
+}

@@ -1,0 +1,510 @@
+{
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 3,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "changeresource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -1
+        },
+        "interval": 1,
+        "condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking",
+                    "inverted": true
+				},
+                {
+                    "type": "origins:on_block",
+                    "inverted": true
+                },
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0.3,
+							"offset_z": 0.3,
+							"offset_y": 0,
+                            "inverted": true
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": -0.3,
+							"offset_z": 0.3,
+							"offset_y": 0,
+                            "inverted": true
+						},
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0.3,
+							"offset_z": -0.3,
+							"offset_y": 0,
+                            "inverted": true
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": -0.3,
+							"offset_z": -0.3,
+							"offset_y": 0,
+                            "inverted": true
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0,
+							"offset_z": -0.3,
+							"offset_y": 0,
+                            "inverted": true
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0,
+							"offset_z": 0.3,
+							"offset_y": 0,
+                            "inverted": true
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": -0.3,
+							"offset_z": 0,
+							"offset_y": 0,
+                            "inverted": true
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0.3,
+							"offset_z": 0,
+							"offset_y": 0,
+                            "inverted": true
+						}
+					]
+				}
+			]
+		}
+    },
+    "resourceclimb": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 3
+        },
+        "interval": 1,
+        "condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking"
+				},
+                {
+                    "type": "origins:on_block",
+                    "inverted": true
+                },
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0.1,
+							"offset_z": 0.1,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": -0.1,
+							"offset_z": 0.1,
+							"offset_y": 0
+						},
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0.1,
+							"offset_z": -0.1,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": -0.1,
+							"offset_z": -0.1,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0,
+							"offset_z": -0.1,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0,
+							"offset_z": 0.1,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": -0.1,
+							"offset_z": 0,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0.1,
+							"offset_z": 0,
+							"offset_y": 0
+						}
+					]
+				}
+			]
+		}
+    },
+    "slowfall": {
+        "type": "origins:modify_velocity",
+        "modifier": {
+          "value": -1,
+          "operation": "multiply_total"
+        },
+        "axes": [
+          "x",
+          "y",
+          "z"
+        ],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 3
+		}
+    },
+    "elytra": {
+        "type": "origins:prevent_elytra_flight",
+        "condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking"
+				},
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0.1,
+							"offset_z": 0.1,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": -0.1,
+							"offset_z": 0.1,
+							"offset_y": 0
+						},
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0.1,
+							"offset_z": -0.1,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": -0.1,
+							"offset_z": -0.1,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0,
+							"offset_z": -0.1,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0,
+							"offset_z": 0.1,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": -0.1,
+							"offset_z": 0,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0.1,
+							"offset_z": 0,
+							"offset_y": 0
+						}
+					]
+				}
+			]
+		}
+    },
+    "flyintowall": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "flyIntoWall"
+        },
+        "condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking"
+				},
+                {
+                    "type": "origins:fall_flying"
+                }
+			]
+		}
+    },
+    "jump": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+			{
+				"type": "origins:change_resource",
+				"resource": "*:*_resource",
+				"change": -1
+			},
+              {
+                "type": "origins:if_else_list",
+                "actions": [
+                  {
+                    "condition": {
+                      "type": "origins:block_collision",
+                      "offset_x": 0.3,
+                      "offset_y": 0,
+                      "offset_z": 0
+                    },
+                    "action": {
+                      "type": "origins:add_velocity",
+                      "x": -0.3,
+                      "y": 0.7,
+                      "set": true
+                    }
+                  },
+                  {
+                    "condition": {
+                      "type": "origins:block_collision",
+                      "offset_x": 0,
+                      "offset_y": 0,
+                      "offset_z": 0.3
+                    },
+                    "action": {
+                      "type": "origins:add_velocity",
+                      "z": -0.3,
+                      "y": 0.7,
+                      "set": true
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": -0.3,
+                        "offset_y": 0,
+                        "offset_z": 0
+                      },
+                      "action": {
+                        "type": "origins:add_velocity",
+                        "x": 0.3,
+                        "y": 0.7,
+                        "set": true
+                      }
+                },
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": 0, 
+                        "offset_y": 0,
+                        "offset_z": -0.3
+                      },
+                      "action": {
+                        "type": "origins:add_velocity",
+                        "z": 0.3,
+                        "y": 0.7,
+                        "set": true
+                      }
+                },
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": 0.3, 
+                        "offset_y": 0,
+                        "offset_z": 0.3
+                      },
+                      "action": {
+                        "type": "origins:add_velocity",
+                        "z": -0.3,
+                        "y": 0.7,
+                        "x": -0.3,
+                        "set": true
+                      }
+                },
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": -0.1, 
+                        "offset_y": 0,
+                        "offset_z": -0.1
+                      },
+                      "action": {
+                        "type": "origins:add_velocity",
+                        "z": 0.3,
+                        "y": 0.7,
+                        "x": 0.3,
+                        "set": true
+                      }
+                },
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": -0.1, 
+                        "offset_y": 0,
+                        "offset_z": 0.1
+                      },
+                      "action": {
+                        "type": "origins:add_velocity",
+                        "z": -0.3,
+                        "y": 0.7,
+                        "x": 0.3,
+                        "set": true
+                      }
+                },
+                {
+                    "condition": {
+                        "type": "origins:block_collision",
+                        "offset_x": 0.1, 
+                        "offset_y": 0,
+                        "offset_z": -0.1
+                      },
+                      "action": {
+                        "type": "origins:add_velocity",
+                        "z": 0.3,
+                        "y": 0.7,
+                        "x": -0.3,
+                        "set": true
+                      }
+                }
+            ]
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:poof ~ ~ ~ 0.15 0.15 0.15 0 5 normal"
+            }
+        ]
+        },
+        "interval": 1,
+        "condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking",
+                    "inverted": true
+				},
+                {
+                    "type": "origins:on_block",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_resource",
+                    "comparison": "==",
+                    "compare_to": 2
+                },
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0.3,
+							"offset_z": 0.3,
+							"offset_y": 0
+						},
+						{
+							"type": "origins:block_collision",
+							"offset_x": -0.3,
+							"offset_z": -0.3,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0.3,
+							"offset_z": -0.3,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": -0.3,
+							"offset_z": 0.3,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0,
+							"offset_z": 0.3,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0.3,
+							"offset_z": 0,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": -0.3,
+							"offset_z": 0.0,
+							"offset_y": 0
+						},
+                        {
+							"type": "origins:block_collision",
+							"offset_x": 0,
+							"offset_z": -0.3,
+							"offset_y": 0
+						}
+					]
+				}
+			]
+		}
+    },
+    "failsafe": {
+        "type": "origins:modify_velocity",
+        "modifier": {
+          "value": -1.5,
+          "operation": "multiply_total"
+        },
+        "axes": [
+          "x",
+          "y",
+          "z"
+        ],
+        "condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking",
+                    "inverted": true
+				},
+                {
+                    "type": "origins:on_block",
+                    "inverted": true
+                },
+				{
+					"type": "origins:resource",
+                    "resource": "*:*_resource",
+                    "comparison": ">=",
+                    "compare_to": 1
+				}
+			]
+		}
+    }
+}

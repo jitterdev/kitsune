@@ -1,0 +1,77 @@
+{
+    "type":"origins:multiple",
+    "scoreboard": {
+        "type":"origins:action_on_callback",
+        "entity_action_chosen": {
+            "type":"origins:and",
+            "actions": [
+                {
+                    "type":"origins:execute_command",
+                    "command": "scoreboard objectives add MoonCycle dummy"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "scoreboard players set @s MoonCycle 8"
+                }
+            ]
+        }
+    },
+    "save-day": {
+        "type":"origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type":"origins:and",
+            "actions": [
+                {
+                    "type":"origins:execute_command",
+                    "command": "execute store result score MoonCycle MoonCycle run time query day"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "scoreboard players operation MoonCycle MoonCycle %= @s MoonCycle"
+                }
+            ]
+        }
+    },
+    "calculate-moon": {
+        "type":"origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type":"origins:execute_command",
+            "command": "scoreboard players operation MoonCycle MoonCycle %= @s MoonCycle"
+        }
+    },
+    "new-moon-condition": {
+        "type":"origins:action_over_time",
+        "entity_action": {
+            "type": "origins:action_over_time",
+            "entity_action": {
+                "type": "origins:action_over_time",
+                "entity_action": {
+                    "type": "origins:execute_command",
+                    "command": "function kitsune:takexp"
+                },
+                "interval": 5
+            },
+            "falling_action": {
+                "type": "origins:execute_command",
+                "command": "function kitsune:tail"
+            },
+            "interval": 5,
+            "condition": {
+                "type": "origins:command",
+                "command": "execute if score @s level > @s kitsune.difference",
+                "comparison": "==",
+                "compare_to": 1
+            }
+        },
+        "condition": {
+            "type": "origins:scoreboard",
+            "objective": "MoonCycle",
+            "comparison": "==",
+            "compare_to": 4
+        },
+        "interval": 300
+    }
+    
+}
