@@ -31,9 +31,7 @@ kitsune
 = Sweet berries are more nutritious, but cooked foods are less nutritious
 - Hunger drains faster
 - No shields
-- using your powers (pounce, dash, wall-jump, double-jump) drains your meter (basically a mana bar). Meter will refill over time passively, but this can be accelerated by pressing sneak + [QUATERNARY], in exchange for the loss of some XP.
-- while holding sneak + [QUATERNARY], you cannot use most of your powers.
-- your exhaustion (hunger drain) and some other attributes (like healing effectiveness) scale with how low your meter is.
+- your powers cost xp to use. This cost scales with the amount of tails you have.
 
 (hidden):
 + Berry bushes do not damage you
