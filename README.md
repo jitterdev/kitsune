@@ -2,12 +2,18 @@
 
 kitsune 
 
-= every new moon, if you meet the requirements for your next tail, you will gain a tail
+= every new moon, if you meet the requirements for your next tail, you will gain a 
+
 = this only works in the overworld, because… the end and nether don’t have a moon
+
 = you can only gain 1 tail every new moon
+
 = you can have a max of 9 tails
+
 = the thresholds for these tails increment by 10 levels for each tail, starting at 20 (2nd tail takes 20, 3rd takes 30, etcetera)
+
 = so getting your 2nd tail consumes 20 levels worth of xp, the 3rd tail consumes 30 levels, and so on.
+
 = you cannot gain your 8th and 9th tail until you have killed the wither and ender dragon respectively
 
 
