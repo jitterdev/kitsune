@@ -2,7 +2,7 @@
 
 kitsune 
 
-= every new moon, if you meet the requirements for your next tail, you will gain a 
+= every new moon, if you meet the requirements for your next tail, you will gain a tail
 
 = this only works in the overworld, because… the end and nether don’t have a moon
 
