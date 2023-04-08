@@ -1,1 +1,0 @@
-execute unless score @s kitsune.difference matches -2147483648..-1 run xp add @s -1 levels

@@ -17,3 +17,9 @@ scoreboard objectives add kitsune.levelReq dummy
 execute unless score @s kitsune.levelReq matches 20..90 run scoreboard players set @s kitsune.levelReq 20
 
 scoreboard objectives add kitsune.difference dummy
+
+scoreboard objectives add day dummy
+execute store result score @s day run time query day
+
+scoreboard objectives add kitsune.lastTailDay dummy
+execute store result score @s kitsune.lastTailDay run time query day

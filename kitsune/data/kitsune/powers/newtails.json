@@ -42,36 +42,49 @@
         }
     },
     "new-moon-condition": {
-        "type":"origins:action_over_time",
+        "type": "origins:action_over_time",
         "entity_action": {
-            "type": "origins:action_over_time",
-            "entity_action": {
-                "type": "origins:action_over_time",
-                "entity_action": {
-                    "type": "origins:execute_command",
-                    "command": "function kitsune:takexp"
-                },
-                "interval": 5
-            },
-            "falling_action": {
-                "type": "origins:execute_command",
-                "command": "function kitsune:tail"
-            },
-            "interval": 5,
+            "type": "origins:execute_command",
+            "command": "function kitsune:checktail"
+        },
+        "rising_action": {
+            "type": "origins:if_else",
             "condition": {
-                "type": "origins:command",
-                "command": "execute if score @s level > @s kitsune.difference",
-                "comparison": "==",
-                "compare_to": 1
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:command",
+                        "command": "execute unless score @s kitsune.difference matches ..-1",
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    {
+                        "type": "origins:command",
+                        "command": "execute unless score @s kitsune.lastTailDay = @s day",
+                        "comparison": "==",
+                        "compare_to": 1
+                    }
+                ]
+            },
+            "if_action": {
+                "type": "origins:execute_command",
+                "command": "function kitsune:beforetail"
+            },
+            "else_action": {
+                "type": "origins:nothing"
             }
         },
         "condition": {
-            "type": "origins:scoreboard",
-            "objective": "MoonCycle",
-            "comparison": "==",
-            "compare_to": 4
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:scoreboard",
+                    "objective": "MoonCycle",
+                    "comparison": "==",
+                    "compare_to": 4
+                }
+            ]
         },
         "interval": 300
     }
-    
 }
