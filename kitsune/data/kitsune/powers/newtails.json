@@ -86,9 +86,21 @@
                     "objective": "MoonCycle",
                     "comparison": "==",
                     "compare_to": 4
+                },
+                {
+                    "type": "origins:scoreboard",
+                    "objective": "kitsune.tailNum",
+                    "comparison": "<",
+                    "compare_to": 9
+                },
+                {
+                    "type": "origins:dimension",
+                    "dimension": "minecraft:overworld"
                 }
             ]
         },
         "interval": 300
-    }
+    },
+    "name": "Tails",
+	"description": "You grow new tails as you age, up to a maximum of 9. You gain new abilities with each tail you gain, but each tail is harder to gain than the last."
 }

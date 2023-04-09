@@ -19,8 +19,7 @@ kitsune
 
 [base (1 tail)]
 + 6 max hearts
-+ when below 4 hearts, gain an additional speed boost
-+ Faster base speed (.015 movement speed faster)
++ when below 4 hearts, gain an additional speed boost (+.015)
 + Pounce ability (2.5 second cooldown, deal increased damage during the pounce) [PRIMARY]
 + 9 slots of storage that is kept on death [SECONDARY]
 + No fall damage
@@ -34,6 +33,7 @@ kitsune
 - your powers cost xp to use. This cost scales with the amount of tails you have.
 
 (hidden):
++ Faster base speed (+.02)
 + Berry bushes do not damage you
 = you occasionally make fox noises
 
