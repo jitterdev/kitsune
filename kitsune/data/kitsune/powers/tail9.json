@@ -129,11 +129,11 @@
 		"multiplier": 1
 	},
 	"armor": {
-		"type": "origins:modify_attribute",
-		"attribute": "minecraft:generic.armor_toughness",
+		"type": "origins:attribute",
 		"modifier": {
-			"operation": "multiply_total_multiplicative",
-			"value": -0.5
+			"attribute": "minecraft:generic.armor_toughness",
+			"value": -0.5,
+            "operation": "multiply_total"
 		}
 	},
     "name": "§09th Tail",

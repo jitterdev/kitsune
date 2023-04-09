@@ -128,10 +128,6 @@
 				{
 					"type": "origins:status_effect",
 					"effect": "minecraft:hero_of_the_village"
-				},
-				{
-					"type": "origins:status_effect",
-					"effect": "minecraft:darkness"
 				}
 			]
 		},

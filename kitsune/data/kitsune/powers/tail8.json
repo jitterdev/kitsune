@@ -165,24 +165,6 @@
 			]
 		}
     },
-    "slowfall": {
-        "type": "origins:modify_velocity",
-        "modifier": {
-          "value": -1,
-          "operation": "multiply_total"
-        },
-        "axes": [
-          "x",
-          "y",
-          "z"
-        ],
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_resource",
-            "comparison": "==",
-            "compare_to": 3
-		}
-    },
     "elytra": {
         "type": "origins:prevent_elytra_flight",
         "condition": {
@@ -472,37 +454,6 @@
 							"offset_y": 0
 						}
 					]
-				}
-			]
-		}
-    },
-    "failsafe": {
-        "type": "origins:modify_velocity",
-        "modifier": {
-          "value": -1.5,
-          "operation": "multiply_total"
-        },
-        "axes": [
-          "x",
-          "y",
-          "z"
-        ],
-        "condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:sneaking",
-                    "inverted": true
-				},
-                {
-                    "type": "origins:on_block",
-                    "inverted": true
-                },
-				{
-					"type": "origins:resource",
-                    "resource": "*:*_resource",
-                    "comparison": ">=",
-                    "compare_to": 1
 				}
 			]
 		}

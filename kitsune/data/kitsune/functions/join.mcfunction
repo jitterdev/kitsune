@@ -10,14 +10,17 @@ scale set pehkui:drops 0.8
 
 
 scoreboard objectives add kitsune.tailNum dummy
-execute unless score @s kitsune.tailNum matches 1..9 run scoreboard players set @s kitsune.tailNum 1
+scoreboard players set @s kitsune.tailNum 1
 
 scoreboard objectives add level level
 scoreboard objectives add xp xp
 
 # amount of levels required for the next tail
 scoreboard objectives add kitsune.levelReq dummy
-execute unless score @s kitsune.levelReq matches 20..90 run scoreboard players set @s kitsune.levelReq 20
+scoreboard players set @s kitsune.levelReq 20
+
+scoreboard objectives add lvl dummy
+scoreboard players operation temp lvl = @s level
 
 # level-levelReq
 scoreboard objectives add kitsune.difference dummy
@@ -38,7 +41,7 @@ scoreboard players set @s kitsune.costModifier 100
 
 # the last day the player obtained a tail
 scoreboard objectives add kitsune.lastTailDay dummy
-execute store result score @s kitsune.lastTailDay run time query day
+scoreboard players set @s kitsune.lastTailDay 0
 
 scoreboard objectives add inverted dummy
 scoreboard players set inverted inverted -1

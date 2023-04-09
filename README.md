@@ -19,9 +19,9 @@ kitsune
 + 6 max hearts
 + when below 4 hearts, gain an additional speed boost (+.015)
 + Pounce ability (2.5 second cooldown, deal increased damage during the pounce) [PRIMARY]
-+ 9 slots of storage that is kept on death [SECONDARY]
++ 9 slots of storage that is kept on death [DENARY]
 + No fall damage
-+ Can ride other players [DENARY]
++ Can ride other players [SECONDARY]
 + Night vision
 + Crouching in place makes you invisible
 = 1.5 blocks tall

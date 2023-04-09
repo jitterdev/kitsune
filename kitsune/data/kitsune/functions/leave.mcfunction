@@ -6,3 +6,4 @@ power revoke @s kitsune:tail6
 power revoke @s kitsune:tail7
 power revoke @s kitsune:tail8
 power revoke @s kitsune:tail9
+scale reset @s

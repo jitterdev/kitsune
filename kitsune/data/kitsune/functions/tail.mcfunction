@@ -1,8 +1,9 @@
 title @s actionbar [{"text":"The New Moon Rises...","italic":true,"bold":true,"color":"dark_red"}]
 
+scoreboard players operation @s kitsune.lastTailDay = @s day
 scoreboard players add @s kitsune.tailNum 1
 scoreboard players add @s kitsune.levelReq 10
-execute store result score @s kitsune.lastTailDay run time query day
+tellraw @a {"score":{"name":"*","objective":"kitsune.tailNum"}}
 
 execute if score @s kitsune.tailNum matches 2 run function kitsune:tails/tail2
 execute if score @s kitsune.tailNum matches 3 run function kitsune:tails/tail3
