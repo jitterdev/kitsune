@@ -14,8 +14,6 @@ kitsune
 
 = so getting your 2nd tail consumes 20 levels worth of xp, the 3rd tail consumes 30 levels, and so on.
 
-= you cannot gain your 8th and 9th tail until you have killed the wither and ender dragon respectively
-
 
 [base (1 tail)]
 + 6 max hearts
@@ -27,10 +25,11 @@ kitsune
 + Night vision
 + Crouching in place makes you invisible
 = 1.5 blocks tall
-= Sweet berries are more nutritious, but cooked foods are less nutritious
++ Sweet berries are more nutritious
 - Hunger drains faster
 - No shields
 - your powers cost xp to use. This cost scales with the amount of tails you have.
+- in the presence of wolves, you are frightened.
 
 (hidden):
 + Faster base speed (+.02)
@@ -39,19 +38,21 @@ kitsune
 
 
 [2]
-+ your movements no longer alert sculk sensors
++ you have an invisibility bar. Takes 20 seconds to recharge to full when empty. Activated with [TERNARY].
+(hidden):
+= armor and held items are still visible
 
 [3]
 + wild foxes begin to recognize your status, and will fight alongside you and act as if tamed by you.
+- your powers cost more xp.
 
 [4]
-+ your invisibility power is instead replaced with a bar. The bar drains proportionally to how much you move while invisible (moving a lot drains it quickly, moving a little drains slowly). Takes 20 seconds to recharge to full when empty. Activated with [TERNARY].
-(hidden):
-= armor and held items are still visible (like the base invisibility power at 1 tail).
-- getting hit while invisible makes you visible again.
++ your movements no longer alert sculk sensors
+
 
 [5]
-+ you gain even more additional speed while below 4 hearts.
++ your speed is increased. (+.1 multiplier to base speed)
+- your powers cost more xp.
 
 [6]
 + berries now give you absorption II for a short amount of time (15 seconds) on consumption
@@ -59,6 +60,7 @@ kitsune
 
 [7]
 + you gain a short multidirectional dash. Activated with [QUINARY].
+- your powers cost more xp.
 
 [8]
 + you gain the ability to wall jump by sneaking in midair while touching a wall. Once you let go of sneak, you jump off of the wall.
@@ -67,4 +69,5 @@ kitsune
 + you gain the ability to double jump.
 + modifiers to your walking speed also apply while you're airborne.
 - your armor toughness is half as effective.
+- your powers cost more xp.
 

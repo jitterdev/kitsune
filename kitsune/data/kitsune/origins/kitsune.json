@@ -2,9 +2,20 @@
     "powers": [
         "kitsune:newtails",
         "kitsune:scale",
-        "origins:tailwind",
         "origins:fall_immunity",
-        "origins:no_shield"
+        "origins:no_shield",
+        "kitsune:berry_immune",
+        "kitsune:fox_eyes",
+        "kitsune:fox_pouch",
+        "kitsune:fox_pouch_sound",
+        "kitsune:hungry",
+        "kitsune:monch",
+        "kitsune:pounce",
+        "kitsune:pounce_falling",
+        "kitsune:pounce_aerialdamage",
+        "kitsune:run",
+        "kitsune:speed",
+        "kitsune:fragilefox"
         
     ],
     "loading_priority": 10,
@@ -12,5 +23,5 @@
     "order": 2,
     "impact": 3,
     "name": "Kitsune",
-    "description": "A benevolant being under the fox lineage."
+    "description": "A benevolant vulpine."
 }

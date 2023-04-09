@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:if_else_list",
+		"actions": [{
+			"condition": {
+				"type": "origins:command",
+				"command": "execute if entity @e[distance=..20,type=minecraft:fox]",
+				"comparison": ">=",
+				"compare_to": 1
+			},
+			"action": {
+				"type": "origins:execute_command",
+				"command": "/data modify entity @e[distance=..20,type=fox,limit=1] Trusted[] set from entity @p UUID"
+			}
+		}]
+	},
+	"interval": 20,
+    "name": "§63rd Tail",
+	"description": "Wild foxes recognize your vulpine nature. They will fight for you and will not run when in proximity with you."
+}

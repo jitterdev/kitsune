@@ -1,0 +1,54 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+
+  "falling_false": {
+    "type": "origins:action_on_land",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "foxboi_two:pounce_falling",
+      "change": -1
+    }
+  },
+
+  "falling_true": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "foxboi_two:pounce_falling",
+      "change": 1
+    },
+    "key": {
+      "key": "key.origins.primary_active",
+      "continuous": false
+    },
+    "cooldown": 50,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+
+  "deal_damage": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "value": 1.33334,
+      "operation": "multiply_base"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:fall_distance",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:resource",
+          "resource": "foxboi_two:pounce_falling",
+          "comparison": "==",
+          "compare_to": 1
+        }
+      ]
+    }
+  }
+}

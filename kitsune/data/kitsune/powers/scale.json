@@ -9,8 +9,25 @@
         }
     },
     "entity_action_lost": {
-        "type": "origins:execute_command",
-        "command": "scale reset @s"
+        "type": "origins:multiple",
+        "actions": [
+            {
+                "type": "origins:delay",
+                "ticks": 1,
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "function kitsune:leave"
+                }
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 1,
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "scale reset @s"
+                }
+            }
+        ]
     },
     "hidden": true
 }

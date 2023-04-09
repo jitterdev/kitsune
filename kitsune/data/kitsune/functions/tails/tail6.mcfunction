@@ -1,0 +1,1 @@
+power grant @s kitsune:tail6

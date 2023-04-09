@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "5th tail speed bonus",
+        "attribute": "minecraft:generic.movement_speed",
+        "value": 0.1,
+        "operation": "multiply_base"
+    },
+    "name": "§35th Tail",
+	"description": "You're even faster."
+}

@@ -34,7 +34,7 @@ execute store result score @s day run time query day
 
 # because we cant use integers in scoreboard objectives we need to multiply by costModifier then divide by 10
 scoreboard objectives add kitsune.costModifier dummy
-scoreboard players set @s kitsune.costModifier 12
+scoreboard players set @s kitsune.costModifier 100
 
 # the last day the player obtained a tail
 scoreboard objectives add kitsune.lastTailDay dummy
