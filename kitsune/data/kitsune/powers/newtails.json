@@ -43,10 +43,47 @@
     },
     "new-moon-condition": {
         "type": "origins:action_over_time",
-        "interval": 200,
+        "interval": 1200,
         "entity_action": {
-            "type": "origins:execute_command",
-            "command": "function kitsune:checktail" 
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "function kitsune:checktail" 
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 20,
+                    "action": {
+                        "type": "origins:if_else",
+                        "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:command",
+                                    "command": "execute if score @s kitsune.difference matches 1..",
+                                    "comparison": "==",
+                                    "compare_to": 1
+                                },
+                                {
+                                    "type": "origins:command",
+                                    "command": "execute unless score @s kitsune.lastTailDay = @s day",
+                                    "comparison": "==",
+                                    "compare_to": 1
+                                }
+                            ]
+                        },
+                        "if_action": {
+                            "type": "origins:execute_command",
+                            "command": "function kitsune:beforetail"
+                        },
+                        "else_action": {
+                            "type": "origins:execute_command",
+                            "command": "tellraw @a \"test\""
+                        }
+                    }
+                }
+            ]
         },
         "condition": {
             "type": "origins:and",
@@ -73,63 +110,6 @@
                     "compare_to": 13000
                 }
             ]
-        }
-    },
-    "beforetail": {
-        "type": "origins:action_over_time",
-        "interval": 400,
-        "entity_action": {
-            "type": "origins:delay",
-            "ticks": 20,
-            "action": {
-                "type": "origins:if_else",
-                "condition": {
-                    "type": "origins:and",
-                    "conditions": [
-                        {
-                            "type": "origins:command",
-                            "command": "execute if score @s kitsune.difference matches 1..",
-                            "comparison": "==",
-                            "compare_to": 1
-                        },
-                        {
-                            "type": "origins:command",
-                            "command": "execute unless score @s kitsune.lastTailDay = @s day",
-                            "comparison": "==",
-                            "compare_to": 1
-                        },
-                        {
-                            "type": "origins:command",
-                            "command": "scoreboard players get MoonCycle MoonCycle",
-                            "comparison": "==",
-                            "compare_to": 4
-                        },
-                        {
-                            "type": "origins:scoreboard",
-                            "objective": "kitsune.tailNum",
-                            "comparison": "<",
-                            "compare_to": 9
-                        },
-                        {
-                            "type": "origins:dimension",
-                            "dimension": "minecraft:overworld"
-                        },
-                        {
-                            "type": "origins:time_of_day",
-                            "comparison": ">",
-                            "compare_to": 13000
-                        }
-                    ]
-                },
-                "if_action": {
-                    "type": "origins:execute_command",
-                    "command": "function kitsune:beforetail"
-                },
-                "else_action": {
-                    "type": "origins:execute_command",
-                    "command": "tellraw @a \"test\""
-                }
-            }
         }
     },
     "name": "Tails",
