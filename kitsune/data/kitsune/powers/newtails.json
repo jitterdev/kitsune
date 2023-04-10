@@ -112,8 +112,7 @@
                             "command": "tag @s add takeXP"
                         },
                         "else_action": {
-                            "type": "origins:execute_command",
-                            "command": "tellraw @a \"test\""
+                            "type": "origins:nothing"
                         }
                     }
                 }

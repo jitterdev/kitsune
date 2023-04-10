@@ -1,2 +1,2 @@
-scoreboard players set @s kitsune.costModifier 95
+scoreboard players set @s kitsune.costModifier 800
 power grant @s kitsune:tail3

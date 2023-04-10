@@ -273,8 +273,8 @@
                     },
                     "action": {
                       "type": "origins:add_velocity",
-                      "x": -0.3,
-                      "y": 0.7,
+                      "x": -0.4,
+                      "y": 0.8,
                       "set": true
                     }
                   },
@@ -287,8 +287,8 @@
                     },
                     "action": {
                       "type": "origins:add_velocity",
-                      "z": -0.3,
-                      "y": 0.7,
+                      "z": -0.4,
+                      "y": 0.8,
                       "set": true
                     }
                 },
@@ -301,8 +301,8 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "x": 0.3,
-                        "y": 0.7,
+                        "x": 0.4,
+                        "y": 0.8,
                         "set": true
                       }
                 },
@@ -315,8 +315,8 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "z": 0.3,
-                        "y": 0.7,
+                        "z": 0.4,
+                        "y": 0.8,
                         "set": true
                       }
                 },
@@ -329,9 +329,9 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "z": -0.3,
-                        "y": 0.7,
-                        "x": -0.3,
+                        "z": -0.4,
+                        "y": 0.8,
+                        "x": -0.4,
                         "set": true
                       }
                 },
@@ -344,9 +344,9 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "z": 0.3,
-                        "y": 0.7,
-                        "x": 0.3,
+                        "z": 0.4,
+                        "y": 0.8,
+                        "x": 0.4,
                         "set": true
                       }
                 },
@@ -359,9 +359,9 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "z": -0.3,
-                        "y": 0.7,
-                        "x": 0.3,
+                        "z": -0.4,
+                        "y": 0.8,
+                        "x": 0.4,
                         "set": true
                       }
                 },
@@ -374,9 +374,9 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "z": 0.3,
-                        "y": 0.7,
-                        "x": -0.3,
+                        "z": 0.4,
+                        "y": 0.8,
+                        "x": -0.4,
                         "set": true
                       }
                 }

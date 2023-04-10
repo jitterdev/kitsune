@@ -5,6 +5,6 @@
         "key": "key.origins.denary_active",
         "continuous": false
     },
-  "name": "Mighty mouth",
-  "description": "You carry a secret stash that no one but you has acccess to. You can access this pouch by using your Denary."
+  "name": "Mighty Mouth",
+  "description": "You carry a secret stash that no one but you has access to, capable of holding 9 slots of items."
 }

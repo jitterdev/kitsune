@@ -582,7 +582,7 @@
 			]
 		},
 		"key": {
-			"key": "key.origins.primary_active",
+			"key": "key.origins.quinary_active",
 			"continuous": true
 		},
 		"cooldown": 11,

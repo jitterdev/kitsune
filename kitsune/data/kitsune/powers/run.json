@@ -11,7 +11,7 @@
 	"comparison": "<",
 	"compare_to": 7
 	},
-	"name": "Scram!",
-	"description": "Whenever your health goes below 4 hearts, you gain a small speed boost",
+	"name": "Scram",
+	"description": "Whenever your health goes below 4 hearts, you gain an additional speed boost.",
 	"tick_rate": 2
 }

@@ -32,8 +32,7 @@
                     },
                     "if_action": {
                         "type": "origins:add_velocity",
-                        "y": 0.5,
-                        "z": 0.6,
+                        "y": 0.6,
                         "space": "local_horizontal"
                     },
                     "else_action": {
@@ -131,12 +130,6 @@
             ]
         }
     },
-    "airborne": {
-		"type": "origins:attribute_modify_transfer",
-		"class": "modify_air_speed",
-		"attribute": "minecraft:generic.movement_speed",
-		"multiplier": 1
-	},
 	"armor": {
 		"type": "origins:attribute",
 		"modifier": {
@@ -146,5 +139,5 @@
 		}
 	},
     "name": "§09th Tail",
-    "description": "You can double jump.\nModifiers to your walking speed also apply while airborne.\nArmor toughness is half as effective."
+    "description": "You gain the ability to double jump.\nArmor toughness is half as effective."
 }

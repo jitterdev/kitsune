@@ -1,4 +1,4 @@
-title @s actionbar [{"text":"The New Moon Rises...","italic":true,"bold":true,"color":"dark_red"}]
+tellraw @s [{"text":"The New Moon Rises...","italic":true,"bold":true,"color":"dark_red"}]
 
 scoreboard players operation @s kitsune.lastTailDay = @s day
 scoreboard players add @s kitsune.tailNum 1

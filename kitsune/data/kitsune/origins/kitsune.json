@@ -1,21 +1,31 @@
 {
     "powers": [
         "kitsune:newtails",
+        "kitsune:descriptions/tail2",
+        "kitsune:descriptions/tail3",
+        "kitsune:descriptions/tail4",
+        "kitsune:descriptions/tail5",
+        "kitsune:descriptions/tail6",
+        "kitsune:descriptions/tail7",
+        "kitsune:descriptions/tail8",
+        "kitsune:descriptions/tail9",
         "kitsune:scale",
         "origins:fall_immunity",
+        "kitsune:jockey",
         "origins:no_shield",
         "kitsune:berry_immune",
         "kitsune:fox_eyes",
         "kitsune:fox_pouch",
         "kitsune:fox_pouch_sound",
         "kitsune:hungry",
-        "kitsune:monch",
+        "kitsune:sounds",
         "kitsune:pounce",
         "kitsune:pounce_falling",
         "kitsune:pounce_aerialdamage",
         "kitsune:run",
         "kitsune:speed",
-        "kitsune:fragilefox"
+        "kitsune:fragilefox",
+        "kitsune:wolfbane"
         
     ],
     "loading_priority": 10,

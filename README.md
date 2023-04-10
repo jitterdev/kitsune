@@ -23,7 +23,6 @@ kitsune
 + No fall damage
 + Can ride other players [SECONDARY]
 + Night vision
-+ Crouching in place makes you invisible
 = 1.5 blocks tall
 + Sweet berries are more nutritious
 - Hunger drains faster
@@ -38,9 +37,7 @@ kitsune
 
 
 [2]
-+ you have an invisibility bar. Takes 20 seconds to recharge to full when empty. Activated with [TERNARY].
-(hidden):
-= armor and held items are still visible
++ modifiers to your walking speed also apply while you're airborne.
 
 [3]
 + wild foxes begin to recognize your status, and will fight alongside you and act as if tamed by you.
@@ -67,7 +64,6 @@ kitsune
 
 [9]
 + you gain the ability to double jump.
-+ modifiers to your walking speed also apply while you're airborne.
 - your armor toughness is half as effective.
 - your powers cost more xp.
 

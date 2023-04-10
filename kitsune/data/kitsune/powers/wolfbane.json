@@ -1,0 +1,62 @@
+{
+	"type": "origins:multiple",
+	"name": "Canine's Bane",
+	"description": "Being in the presence of wolves - even non-hostile ones - makes you quiver in fear. You are inflicted with Weakness and cannot become invisible in their presence.",
+	"wolfradius": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:if_else_list",
+			"actions": [{
+					"condition": {
+						"type": "origins:command",
+						"command": "execute if entity @e[distance=..10,type=minecraft:wolf]",
+						"comparison": ">=",
+						"compare_to": 1
+					},
+					"action": {
+						"type": "origins:and",
+						"actions": [{
+								"type": "origins:apply_effect",
+								"effect": {
+									"effect": "minecraft:weakness",
+									"duration": 20,
+									"amplifier": 0
+								}
+							},
+							{
+								"type": "origins:change_resource",
+								"resource": "kitsune:wolfbane_iswolf",
+								"change": 1
+							}
+						]
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:command",
+						"command": "execute if entity @e[distance=..10,type=minecraft:wolf]",
+						"comparison": ">=",
+						"compare_to": 1,
+						"inverted": true
+					},
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "kitsune:wolfbane_iswolf",
+						"change": -1
+					}
+				}
+			]
+		},
+		"interval": 20
+	},
+
+	"iswolf": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"hud_render": {
+			"should_render": false
+		},
+		"start_value": 0
+	}
+}
