@@ -41,6 +41,40 @@
             "command": "scoreboard players operation MoonCycle MoonCycle %= @s MoonCycle"
         }
     },
+    "takeXP": {
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:command",
+                "command": "execute if score @s level > @s kitsune.difference",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "if_action": {
+                "type": "origins:execute_command",
+                "command": "xp add @s -1 levels"
+            },
+            "else_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "tag @s remove takeXP"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "function kitsune:tail"
+                    }
+                ]
+            }
+        },
+        "condition": {
+            "type": "origins:nbt",
+            "nbt": "{Tags:[takeXP]}"
+        }
+    },
     "new-moon-condition": {
         "type": "origins:action_over_time",
         "interval": 1200,
@@ -75,7 +109,7 @@
                         },
                         "if_action": {
                             "type": "origins:execute_command",
-                            "command": "function kitsune:beforetail"
+                            "command": "tag @s add takeXP"
                         },
                         "else_action": {
                             "type": "origins:execute_command",

@@ -574,6 +574,10 @@
 				{
 					"type": "origins:set_fall_distance",
 					"fall_distance": 0
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "function kitsune:xpcost"
 				}
 			]
 		},
@@ -634,6 +638,11 @@
 			"key": "key.origins.quinary_active",
 			"continuous": true
 		}
+	},
+	"condition": {
+		"type": "origins:xp_levels",
+		"comparison": ">=",
+		"compare_to": 1
 	},
 	"name": "§d7th Tail",
 	"description": "You can dash multi-directionally."

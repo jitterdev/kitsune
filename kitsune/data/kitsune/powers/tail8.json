@@ -252,6 +252,10 @@
         "entity_action": {
             "type": "origins:and",
             "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "function kitsune:xpcost"
+            },
 			{
 				"type": "origins:change_resource",
 				"resource": "*:*_resource",
@@ -457,6 +461,11 @@
 				}
 			]
 		}
+    },
+    "condition": {
+        "type": "origins:xp_levels",
+        "comparison": ">=",
+        "compare_to": 1
     },
     "name": "§58th Tail",
 	"description": "You can wall-jump by crouching while in contact with a wall in the air. Releasing sneak will propel you off the wall vertically."
