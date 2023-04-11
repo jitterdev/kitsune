@@ -53,7 +53,6 @@ kitsune
 
 [6]
 + berries now give you absorption II for a short amount of time (15 seconds) on consumption
-= pounce cooldown decreased to 2 seconds.
 
 [7]
 + you gain a short multidirectional dash. Activated with [QUINARY].
