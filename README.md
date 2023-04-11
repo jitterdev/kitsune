@@ -15,7 +15,7 @@ kitsune
 = so getting your 2nd tail consumes 20 levels worth of xp, the 3rd tail consumes 30 levels, and so on.
 
 
-[base (1 tail)]
+## [base (1 tail)]
 + 6 max hearts
 + when below 4 hearts, gain an additional speed boost (+.015)
 + Pounce ability (2.5 second cooldown, deal increased damage during the pounce) [PRIMARY]
@@ -36,32 +36,32 @@ kitsune
 = you occasionally make fox noises
 
 
-[2]
+## [2]
 + modifiers to your walking speed also apply while you're airborne.
 
-[3]
+## [3]
 + wild foxes begin to recognize your status, and will fight alongside you and act as if tamed by you.
 - your powers cost more xp.
 
-[4]
+## [4]
 + your movements no longer alert sculk sensors
 
 
-[5]
+## [5]
 + your speed is increased. (+.1 multiplier to base speed)
 - your powers cost more xp.
 
-[6]
+## [6]
 + berries now give you absorption II for a short amount of time (15 seconds) on consumption
 
-[7]
+## [7]
 + you gain a short multidirectional dash. Activated with [QUINARY].
 - your powers cost more xp.
 
-[8]
+## [8]
 + you gain the ability to wall jump by sneaking in midair while touching a wall. Once you let go of sneak, you jump off of the wall.
 
-[9]
+## [9]
 + you gain the ability to double jump.
 - your armor toughness is half as effective.
 - your powers cost more xp.
