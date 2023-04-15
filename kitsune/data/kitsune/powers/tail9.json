@@ -130,14 +130,13 @@
             ]
         }
     },
-	"armor": {
-		"type": "origins:attribute",
-		"modifier": {
-			"attribute": "minecraft:generic.armor_toughness",
-			"value": -0.5,
-            "operation": "multiply_total"
-		}
-	},
+    "xpgain": {
+        "type": "origins:modify_xp_gain",
+        "modifier": {
+            "operation": "multiply_base_multiplicative",
+            "value": 0.25
+        }
+    },
     "name": "§09th Tail",
-    "description": "You gain the ability to double jump.\nArmor toughness is half as effective."
+    "description": "You gain the ability to double jump.\nArmor toughness is half as effective.\nYou gain 25% more XP."
 }

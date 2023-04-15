@@ -14,6 +14,7 @@ kitsune
 
 = so getting your 2nd tail consumes 20 levels worth of xp, the 3rd tail consumes 30 levels, and so on.
 
+= tails are kept on death
 
 ## [base (1 tail)]
 + 6 max hearts
@@ -29,6 +30,7 @@ kitsune
 - No shields
 - your powers cost xp to use. This cost scales with the amount of tails you have.
 - in the presence of wolves, you are frightened.
+- your armor toughness is half as effective.
 
 (hidden):
 + Faster base speed (+.02)
@@ -52,7 +54,7 @@ kitsune
 - your powers cost more xp.
 
 ## [6]
-+ berries now give you absorption II for a short amount of time (15 seconds) on consumption
++ berries now give you absorption II for a short amount of time (15 seconds) on consumption.
 
 ## [7]
 + you gain a short multidirectional dash. Activated with [QUINARY].
@@ -63,6 +65,6 @@ kitsune
 
 ## [9]
 + you gain the ability to double jump.
-- your armor toughness is half as effective.
++ the rate at which you gain xp is increased by 25%.
 - your powers cost more xp.
 
