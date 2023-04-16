@@ -2,7 +2,9 @@
 
 kitsune 
 
-= every new moon, if you meet the requirements for your next tail, you will gain a tail
+= every new moon, if you meet the requirements for your next tail, you will gain a tail.
+
+= you can toggle gaining tails with [OCTONARY] (anvil sound indicates it being disabled, bell sound means its enabled)
 
 = this only works in the overworld, because… the end and nether don’t have a moon
 

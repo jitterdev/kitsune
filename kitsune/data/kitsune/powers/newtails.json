@@ -41,7 +41,37 @@
             "command": "scoreboard players operation MoonCycle MoonCycle %= @s MoonCycle"
         }
     },
-    "takeXP": {
+    "toggle": {
+        "type": "origins:toggle",
+        "key": {
+            "key": "key.origins.octonary_active",
+            "continuous": false
+        }
+    },
+    "togglemessage": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.octonary_active",
+            "continuous": false
+        },
+        "entity_action": {
+            "type": "origins:if_else",
+            "if_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.anvil.place"
+
+            },
+            "else_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.note_block.pling"
+            },
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_toggle"
+            }
+        }
+    },
+    "takexp": {
         "type": "origins:action_over_time",
         "interval": 2,
         "entity_action": {
@@ -71,8 +101,17 @@
             }
         },
         "condition": {
-            "type": "origins:nbt",
-            "nbt": "{Tags:[takeXP]}"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:nbt",
+                    "nbt": "{Tags:[takeXP]}"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
         }
     },
     "new-moon-condition": {
