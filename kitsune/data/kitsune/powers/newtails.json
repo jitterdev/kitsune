@@ -180,6 +180,10 @@
                     "type": "origins:time_of_day",
                     "comparison": ">",
                     "compare_to": 13000
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
                 }
             ]
         }
