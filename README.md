@@ -26,8 +26,10 @@ kitsune
 + No fall damage
 + Can ride other players [SECONDARY]
 + Night vision
-= 1.5 blocks tall
 + Sweet berries are more nutritious
+
+= 1.5 blocks tall
+
 - Hunger drains faster
 - No shields
 - your powers cost xp to use. This cost scales with the amount of tails you have.
@@ -37,6 +39,7 @@ kitsune
 (hidden):
 + Faster base speed (+.02)
 + Berry bushes do not damage you
+
 = you occasionally make fox noises
 
 
