@@ -32,7 +32,7 @@ kitsune
 
 - Hunger drains faster
 - No shields
-- your powers cost xp to use. This cost scales with the amount of tails you have.
+- your powers cost xp to use. This cost scales with the amount of tails you have. your base powers don't have an xp cost.
 - in the presence of wolves, you are frightened.
 - your armor toughness is half as effective.
 
