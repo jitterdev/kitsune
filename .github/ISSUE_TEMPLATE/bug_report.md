@@ -18,7 +18,8 @@ Steps to reproduce the behavior:
 4. See error
 
 **Information**
-Add videos or screenshots if needed
+Add videos or screenshots if needed.
+
 Upload your log file to https://mclo.gs/ and put it here.
 
 **Additional context**
