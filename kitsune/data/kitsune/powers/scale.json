@@ -1,20 +1,34 @@
 {
-    "type": "origins:action_on_callback",
-    "entity_action_gained": {
-        "type": "origins:delay",
-        "ticks": 1,
-        "action": {
-            "type": "origins:execute_command",
-            "command": "function kitsune:join"
-        }
+    "type": "origins:multiple",
+    "join": {
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:delay",
+            "ticks": 1,
+            "action": {
+                "type": "origins:execute_command",
+                "command": "function kitsune:join"
+            }
+        },
+        "entity_action_lost": {
+            "type": "origins:delay",
+            "ticks": 20,
+            "action": {
+                "type": "origins:execute_command",
+                "command": "function kitsune:leave"
+            }
+        },
+        "hidden": true
     },
-    "entity_action_lost": {
-        "type": "origins:delay",
-        "ticks": 20,
-        "action": {
-            "type": "origins:execute_command",
-            "command": "function kitsune:leave"
+    "respawn": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:delay",
+            "ticks": 1,
+            "action": {
+                "type": "origins:execute_command",
+                "command": "function kitsune:respawn"
+            }
         }
-    },
-    "hidden": true
+    }
 }
