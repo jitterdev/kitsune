@@ -17,8 +17,7 @@
                 "type": "origins:execute_command",
                 "command": "function kitsune:leave"
             }
-        },
-        "hidden": true
+        }
     },
     "respawn": {
         "type": "origins:action_on_callback",
@@ -30,5 +29,6 @@
                 "command": "function kitsune:respawn"
             }
         }
-    }
+    },
+    "hidden": true
 }
