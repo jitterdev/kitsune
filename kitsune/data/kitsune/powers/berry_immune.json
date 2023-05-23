@@ -1,10 +1,29 @@
 {
-
-	"type": "origins:invulnerability",
-	"damage_condition": {
-		"type": "origins:name",
-		"name": "sweetBerryBush"
+	"type": "origins:multiple",
+	"damage": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "sweetBerryBush"
+		},
+		"hidden":true
 	},
-	"hidden":true
+	"movement": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": 2.7,
+			"name": "No slow in sweet berry bushes"
+		},
+		"tick_rate": 20,
+		"condition": {
+			"type": "origins:in_block",
+			"block_condition": {
+				"type": "origins:block",
+				"block": "minecraft:sweet_berry_bush"
+			}
+		}
+	}
 }
 

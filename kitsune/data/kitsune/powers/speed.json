@@ -5,7 +5,7 @@
 		"value": 0.02,
 		"operation": "addition"
 	},
-	"name": "Light body",
+	"name": "Light Body",
 	"description": "Your small frame gives little weight, making it easier to move at the cost of health.",
 	"tick_rate": 2
 }
