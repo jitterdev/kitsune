@@ -27,8 +27,9 @@
         "kitsune:speed",
         "kitsune:fragilefox",
         "kitsune:berries",
-        "kitsune:wolfbane"
-        
+        "kitsune:wolfbane",
+        "kitsune:damage"
+
     ],
     "loading_priority": 10,
     "icon": "minecraft:sweet_berries",

@@ -5,7 +5,7 @@
     "actions": [
       {
         "type": "origins:execute_command",
-        "command": "particle minecraft:cloud ~ ~ ~ 0.5 0 0.5 0.2 20 normal",
+        "command": "particle minecraft:cloud ~ ~ ~ 0.5 0 0.5 0.2 20 normal @s",
         "permission_level": 4
       },
       {

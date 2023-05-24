@@ -13,7 +13,6 @@ scoreboard objectives add kitsune.tailNum dummy
 scoreboard players set @s kitsune.tailNum 1
 
 scoreboard objectives add level level
-scoreboard objectives add xp xp
 
 # amount of levels required for the next tail
 scoreboard objectives add kitsune.levelReq dummy

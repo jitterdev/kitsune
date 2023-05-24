@@ -1,14 +1,13 @@
 {
   "type": "origins:active_self",
-   "entity_action": {
-   "type": "origins:chance",
-   "action":
-    {    
-	"type": "origins:execute_command",
-	"command": "playsound minecraft:entity.fox.eat player @s ~ ~ ~ 1 1 1",
-    "permission_level": 4
-    },
-    "chance": 0.25
+    "entity_action": {
+      "type": "origins:chance",
+      "action": {    
+        "type": "origins:execute_command",
+        "command": "playsound minecraft:entity.fox.eat player @s ~ ~ ~ 1 1 1",
+        "permission_level": 4
+      },
+      "chance": 0.25
     },
 	"hidden": true,
     "key": {
@@ -16,7 +15,7 @@
       "continuous": false
     },
 	"cooldown": 0,
-    "hud_render": {
-      "should_render": false
-   }
+  "hud_render": {
+    "should_render": false
+  }
 }

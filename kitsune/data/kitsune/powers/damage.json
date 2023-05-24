@@ -1,0 +1,37 @@
+{
+    "type": "origins:multiple",
+    "truedamage": {
+        "type": "origins:action_when_damage_taken",
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 1,
+            "source": {
+                "name": "badRespawnPoint",
+                "unblockable": true,
+                "bypassesArmor": true
+            }
+        },
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:player"
+            }
+        },
+        "cooldown": 5
+    },
+    "kineticdamage": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "name": "Double kinetic damage",
+            "operation": "multiply_base",
+            "value": 1.0
+        },
+        "damage_condition": {
+            "type":"origins:name",
+            "name": "flyIntoWall"
+        }
+    },
+    "name": "Brittle",
+    "description": "You take an additional half a heart of true damage whenever you take damage from a player.\nYou take double kinetic damage."
+}
