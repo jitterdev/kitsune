@@ -3,6 +3,7 @@
 	"block_condition": {
 		"type": "origins:block",
 		"block": "minecraft:sweet_berry_bush"
-	}
+	},
+	"hidden": true
 }
 

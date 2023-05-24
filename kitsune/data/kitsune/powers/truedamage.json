@@ -1,0 +1,20 @@
+{
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+        "type": "origins:damage",
+        "amount": 1,
+        "source": {
+            "name": "badRespawnPoint",
+            "unblockable": true,
+            "bypassesArmor": true
+        }
+    },
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:player"
+        }
+    },
+    "cooldown": 5
+}

@@ -5,7 +5,7 @@
 scoreboard players operation level XPtools_math = @s XPtools_math
 
 ## The to the power of (level^2)
-scoreboard players operation levelp XPtools_math = @s XPtools_math
+scoreboard players operation levelp XPtools_math = level XPtools_math
 scoreboard players operation levelp XPtools_math *= level XPtools_math
 
 ## (6 × level)
