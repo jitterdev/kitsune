@@ -27,9 +27,6 @@ scoreboard objectives add kitsune.difference dummy
 scoreboard objectives add day dummy
 execute store result score @s day run time query day
 
-scoreboard objectives add kitsune.costModifier dummy
-scoreboard players set @s kitsune.costModifier 90
-
 # the last day the player obtained a tail
 scoreboard objectives add kitsune.lastTailDay dummy
 scoreboard players set @s kitsune.lastTailDay 0

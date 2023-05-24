@@ -66,10 +66,8 @@ kitsune
 - your powers cost more xp.
 
 ## [8]
-+ you gain the ability to wall jump by sneaking in midair while touching a wall. Once you let go of sneak, you jump off of the wall.
++ You can wall-jump by crouching while in contact with a wall in the air. Releasing sneak will propel you off the wall vertically.
 
 ## [9]
-+ you gain the ability to double jump.
-+ the rate at which you gain xp is increased by 25%.
-- your powers cost more xp.
++ If your melee attack deals less than 2 hearts of damage, strike again in 0.1 seconds, dealing a heart of true damage. 2 second cooldown.
 

@@ -28,7 +28,8 @@
         "kitsune:fragilefox",
         "kitsune:berries",
         "kitsune:wolfbane",
-        "kitsune:damage"
+        "kitsune:damage",
+        "kitsune:circulation"
 
     ],
     "loading_priority": 10,

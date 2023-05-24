@@ -1,5 +1,5 @@
 {
     "type": "origins:simple",
     "name": "§09th Tail",
-    "description": "Upon gaining your 9th tail:\nYou gain the ability to double jump.\nYou gain 25% more XP."
+    "description": "Upon gaining your 9th tail:\nIf your melee attack deals less than 2 hearts of damage, strike again in 0.1 seconds, dealing a heart of true damage. 2 second cooldown."
 }
