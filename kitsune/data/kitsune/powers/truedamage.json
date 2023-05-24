@@ -16,5 +16,7 @@
             "entity_type": "minecraft:player"
         }
     },
-    "cooldown": 5
+    "cooldown": 5,
+    "name": "Brittle",
+    "description": "You take an additional half a heart of true damage whenever you take damage from a player."
 }

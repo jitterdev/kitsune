@@ -1,6 +1,4 @@
 {
     "type": "origins:prevent_game_event",
-    "event": "minecraft:step",
-    "name": "§24th Tail",
-	"description": "You're lighter on your feet, making you harder to detect."
+    "event": "minecraft:step"
 }

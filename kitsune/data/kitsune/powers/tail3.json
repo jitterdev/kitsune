@@ -15,7 +15,5 @@
 			}
 		}]
 	},
-	"interval": 20,
-    "name": "§63rd Tail",
-	"description": "Wild foxes recognize your vulpine nature. They will fight for you and will not run when in proximity with you."
+	"interval": 20
 }

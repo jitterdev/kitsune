@@ -2,7 +2,5 @@
 	"type": "origins:attribute_modify_transfer",
 	"class": "modify_air_speed",
 	"attribute": "minecraft:generic.movement_speed",
-	"multiplier": 1,
-	"name": "§42nd Tail",
-    "description": "Upon gaining your 2nd tail:\nModifiers to your walk speed also apply while airborne."
+	"multiplier": 1
 }

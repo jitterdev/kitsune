@@ -136,7 +136,5 @@
             "operation": "multiply_total",
             "value": 0.25
         }
-    },
-    "name": "§09th Tail",
-    "description": "You gain the ability to double jump.\nYou gain 25% more XP."
+    }
 }

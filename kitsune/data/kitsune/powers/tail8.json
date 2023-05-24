@@ -165,6 +165,24 @@
 			]
 		}
     },
+    "slowfall": {
+        "type": "origins:modify_velocity",
+        "modifier": {
+          "value": -1,
+          "operation": "multiply_total"
+        },
+        "axes": [
+          "x",
+          "y",
+          "z"
+        ],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 3
+		}
+    },
     "elytra": {
         "type": "origins:prevent_elytra_flight",
         "condition": {
@@ -252,10 +270,6 @@
         "entity_action": {
             "type": "origins:and",
             "actions": [
-            {
-                "type": "origins:execute_command",
-                "command": "function kitsune:xpcost"
-            },
 			{
 				"type": "origins:change_resource",
 				"resource": "*:*_resource",
@@ -273,8 +287,8 @@
                     },
                     "action": {
                       "type": "origins:add_velocity",
-                      "x": -0.4,
-                      "y": 0.8,
+                      "x": -0.3,
+                      "y": 0.7,
                       "set": true
                     }
                   },
@@ -287,8 +301,8 @@
                     },
                     "action": {
                       "type": "origins:add_velocity",
-                      "z": -0.4,
-                      "y": 0.8,
+                      "z": -0.3,
+                      "y": 0.7,
                       "set": true
                     }
                 },
@@ -301,8 +315,8 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "x": 0.4,
-                        "y": 0.8,
+                        "x": 0.3,
+                        "y": 0.7,
                         "set": true
                       }
                 },
@@ -315,8 +329,8 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "z": 0.4,
-                        "y": 0.8,
+                        "z": 0.3,
+                        "y": 0.7,
                         "set": true
                       }
                 },
@@ -329,9 +343,9 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "z": -0.4,
-                        "y": 0.8,
-                        "x": -0.4,
+                        "z": -0.3,
+                        "y": 0.7,
+                        "x": -0.3,
                         "set": true
                       }
                 },
@@ -344,9 +358,9 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "z": 0.4,
-                        "y": 0.8,
-                        "x": 0.4,
+                        "z": 0.3,
+                        "y": 0.7,
+                        "x": 0.3,
                         "set": true
                       }
                 },
@@ -359,9 +373,9 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "z": -0.4,
-                        "y": 0.8,
-                        "x": 0.4,
+                        "z": -0.3,
+                        "y": 0.7,
+                        "x": 0.3,
                         "set": true
                       }
                 },
@@ -374,9 +388,9 @@
                       },
                       "action": {
                         "type": "origins:add_velocity",
-                        "z": 0.4,
-                        "y": 0.8,
-                        "x": -0.4,
+                        "z": 0.3,
+                        "y": 0.7,
+                        "x": -0.3,
                         "set": true
                       }
                 }
@@ -462,12 +476,35 @@
 			]
 		}
     },
-    "condition": {
-        "type": "origins:xp_levels",
-        "comparison": ">=",
-        "compare_to": 1
-    },
-    "name": "§58th Tail",
-	"description": "You can wall-jump by crouching while in contact with a wall in the air. Releasing sneak will propel you off the wall vertically."
+    "failsafe": {
+        "type": "origins:modify_velocity",
+        "modifier": {
+          "value": -1.5,
+          "operation": "multiply_total"
+        },
+        "axes": [
+          "x",
+          "y",
+          "z"
+        ],
+        "condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking",
+                    "inverted": true
+				},
+                {
+                    "type": "origins:on_block",
+                    "inverted": true
+                },
+				{
+					"type": "origins:resource",
+                    "resource": "*:*_resource",
+                    "comparison": ">=",
+                    "compare_to": 1
+				}
+			]
+		}
+    }
 }
-

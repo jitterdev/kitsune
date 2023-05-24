@@ -643,7 +643,5 @@
 		"type": "origins:xp_levels",
 		"comparison": ">=",
 		"compare_to": 1
-	},
-	"name": "§d7th Tail",
-	"description": "You can dash multi-directionally."
+	}
 }
