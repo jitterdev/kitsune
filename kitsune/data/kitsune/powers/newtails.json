@@ -1,76 +1,5 @@
 {
     "type":"origins:multiple",
-    "scoreboard": {
-        "type":"origins:action_on_callback",
-        "entity_action_chosen": {
-            "type":"origins:and",
-            "actions": [
-                {
-                    "type":"origins:execute_command",
-                    "command": "scoreboard objectives add MoonCycle dummy"
-                },
-                {
-                    "type":"origins:execute_command",
-                    "command": "scoreboard players set @s MoonCycle 8"
-                }
-            ]
-        }
-    },
-    "save-day": {
-        "type":"origins:action_over_time",
-        "interval": 20,
-        "entity_action": {
-            "type":"origins:and",
-            "actions": [
-                {
-                    "type":"origins:execute_command",
-                    "command": "execute store result score MoonCycle MoonCycle run time query day"
-                },
-                {
-                    "type":"origins:execute_command",
-                    "command": "scoreboard players operation MoonCycle MoonCycle %= @s MoonCycle"
-                }
-            ]
-        }
-    },
-    "calculate-moon": {
-        "type":"origins:action_over_time",
-        "interval": 20,
-        "entity_action": {
-            "type":"origins:execute_command",
-            "command": "scoreboard players operation MoonCycle MoonCycle %= @s MoonCycle"
-        }
-    },
-    "toggle": {
-        "type": "origins:toggle",
-        "key": {
-            "key": "key.origins.octonary_active",
-            "continuous": false
-        }
-    },
-    "togglemessage": {
-        "type": "origins:active_self",
-        "key": {
-            "key": "key.origins.octonary_active",
-            "continuous": false
-        },
-        "entity_action": {
-            "type": "origins:if_else",
-            "if_action": {
-                "type": "origins:play_sound",
-                "sound": "minecraft:block.anvil.place"
-
-            },
-            "else_action": {
-                "type": "origins:play_sound",
-                "sound": "minecraft:block.note_block.pling"
-            },
-            "condition": {
-                "type": "origins:power_active",
-                "power": "*:*_toggle"
-            }
-        }
-    },
     "takexp": {
         "type": "origins:action_over_time",
         "interval": 2,
@@ -106,17 +35,13 @@
                 {
                     "type": "origins:nbt",
                     "nbt": "{Tags:[takeXP]}"
-                },
-                {
-                    "type": "origins:power_active",
-                    "power": "*:*_toggle"
                 }
             ]
         }
     },
     "new-moon-condition": {
         "type": "origins:action_over_time",
-        "interval": 1200,
+        "interval": 60,
         "entity_action": {
             "type": "origins:and",
             "actions": [
@@ -125,34 +50,30 @@
                     "command": "function kitsune:checktail" 
                 },
                 {
-                    "type": "origins:delay",
-                    "ticks": 20,
-                    "action": {
-                        "type": "origins:if_else",
-                        "condition": {
-                            "type": "origins:and",
-                            "conditions": [
-                                {
-                                    "type": "origins:command",
-                                    "command": "execute if score @s kitsune.difference matches 1..",
-                                    "comparison": "==",
-                                    "compare_to": 1
-                                },
-                                {
-                                    "type": "origins:command",
-                                    "command": "execute unless score @s kitsune.lastTailDay = @s day",
-                                    "comparison": "==",
-                                    "compare_to": 1
-                                }
-                            ]
-                        },
-                        "if_action": {
-                            "type": "origins:execute_command",
-                            "command": "tag @s add takeXP"
-                        },
-                        "else_action": {
-                            "type": "origins:nothing"
-                        }
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:command",
+                                "command": "execute if score @s kitsune.difference matches 1..",
+                                "comparison": "==",
+                                "compare_to": 1
+                            },
+                            {
+                                "type": "origins:command",
+                                "command": "execute unless score @s kitsune.lastTailDay = @s day",
+                                "comparison": "==",
+                                "compare_to": 1
+                            }
+                        ]
+                    },
+                    "if_action": {
+                        "type": "origins:execute_command",
+                        "command": "tag @s add takeXP"
+                    },
+                    "else_action": {
+                        "type": "origins:nothing"
                     }
                 }
             ]
@@ -161,10 +82,8 @@
             "type": "origins:and",
             "conditions": [
                 {
-                    "type": "origins:command",
-                    "command": "scoreboard players get MoonCycle MoonCycle",
-                    "comparison": "==",
-                    "compare_to": 4
+                    "type": "origins:predicate",
+                    "predicate": "kitsune:is_new_moon"
                 },
                 {
                     "type": "origins:scoreboard",
@@ -175,15 +94,6 @@
                 {
                     "type": "origins:dimension",
                     "dimension": "minecraft:overworld"
-                },
-                {
-                    "type": "origins:time_of_day",
-                    "comparison": ">",
-                    "compare_to": 13000
-                },
-                {
-                    "type": "origins:power_active",
-                    "power": "*:*_toggle"
                 }
             ]
         }

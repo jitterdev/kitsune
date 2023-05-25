@@ -3,7 +3,9 @@ tellraw @s [{"text":"The New Moon Rises...","italic":true,"bold":true,"color":"d
 scoreboard players operation @s kitsune.lastTailDay = @s day
 scoreboard players add @s kitsune.tailNum 1
 scoreboard players add @s kitsune.levelReq 10
-tellraw @a {"score":{"name":"*","objective":"kitsune.tailNum"}}
+tellraw @s [{"text":"You now have "},{"score":{"name":"*","objective":"kitsune.tailNum"}},{"text":" tails."}]
+playsound minecraft:block.beacon.power_select master @s ~ ~ ~ 0.2 1 0
+particle minecraft:portal ~ ~0.4 ~ 0.3 0.6 0.3 0 100 normal @s
 
 execute if score @s kitsune.tailNum matches 2 run function kitsune:tails/tail2
 execute if score @s kitsune.tailNum matches 3 run function kitsune:tails/tail3

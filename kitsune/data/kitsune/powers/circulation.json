@@ -1,0 +1,9 @@
+{
+    "type": "origins:disable_regen",
+    "condition": {
+        "type": "origins:sprinting",
+        "inverted": true
+    },
+    "name": "Circulation",
+    "description": "Natural regeneration is disabled unless you are sprinting."
+}

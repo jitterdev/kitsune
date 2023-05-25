@@ -1,5 +1,9 @@
 {
     "type": "origins:simple",
     "name": "§35th Tail",
-	"description": "Upon gaining your 5th tail:\nYou're even faster."
+    "description": "Upon gaining your 5th tail:\nYou can dash multi-directionally.",
+	"key": {
+		"key": "key.origins.quinary_active",
+		"continuous": true
+	}
 }

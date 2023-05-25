@@ -1,6 +1,9 @@
 {
-    "type": "origins:prevent_game_event",
-    "event": "minecraft:step",
-    "name": "§24th Tail",
-	"description": "You're lighter on your feet, making you harder to detect."
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "tail speed bonus",
+        "attribute": "minecraft:generic.movement_speed",
+        "value": 0.1,
+        "operation": "multiply_base"
+    }
 }

@@ -1,5 +1,5 @@
 {
     "type": "origins:simple",
     "name": "§63rd Tail",
-	"description": "Upon gaining your 3rd tail:\nWild foxes recognize your vulpine nature. They will fight for you and will not run when in proximity with you."
+    "description": "Upon gaining your 3rd tail:\nYou can wall-jump by crouching while in contact with a wall in the air. Releasing sneak will propel you off the wall vertically."
 }

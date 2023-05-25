@@ -1,6 +1,6 @@
 {
     "type": "origins:simple",
     "name": "§58th Tail",
-	"description": "Upon gaining your 8th tail:\nYou can wall-jump by crouching while in contact with a wall in the air. Releasing sneak will propel you off the wall vertically."
+	"description": "Upon gaining your 8th tail:\n+0.1 multiplier to your base speed."
 }
 

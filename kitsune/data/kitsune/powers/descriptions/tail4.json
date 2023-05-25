@@ -1,5 +1,5 @@
 {
     "type": "origins:simple",
     "name": "§24th Tail",
-	"description": "Upon gaining your 4th tail:\nYour movements no longer alert sculk sensors."
+	"description": "Upon gaining your 4th tail:\n+0.1 multiplier to your base speed."
 }

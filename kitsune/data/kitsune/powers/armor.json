@@ -2,9 +2,9 @@
     "type": "origins:attribute",
     "modifier": {
         "attribute": "minecraft:generic.armor_toughness",
-        "value": -0.5,
+        "value": 0,
         "operation": "multiply_total"
     },
     "name": "Vulnerable",
-	"description": "Armor you wear protects you less from strong attacks."
+	"description": "You don't benefit from armor toughness."
 }
