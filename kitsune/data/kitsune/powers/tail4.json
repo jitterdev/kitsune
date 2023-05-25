@@ -1,4 +1,9 @@
 {
-    "type": "origins:prevent_game_event",
-    "event": "minecraft:step"
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "tail speed bonus",
+        "attribute": "minecraft:generic.movement_speed",
+        "value": 0.1,
+        "operation": "multiply_base"
+    }
 }

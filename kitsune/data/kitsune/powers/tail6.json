@@ -1,17 +1,9 @@
 {
-    "type": "origins:action_on_item_use",
-    "entity_action": {
-        "type": "origins:apply_effect",
-        "effect": {
-            "effect": "minecraft:absorption",
-            "duration": 300,
-            "amplifier": 1
-        }
-    },
-    "item_condition": {
-        "type": "origins:ingredient",
-        "ingredient": {
-            "item": "minecraft:sweet_berries"
-        }
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "tail speed bonus",
+        "attribute": "minecraft:generic.movement_speed",
+        "value": 0.1,
+        "operation": "multiply_base"
     }
 }

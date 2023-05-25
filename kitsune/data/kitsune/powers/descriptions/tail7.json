@@ -1,9 +1,5 @@
 {
 	"type": "origins:simple",
 	"name": "§d7th Tail",
-	"description": "Upon gaining your 7th tail:\nYou can dash multi-directionally.",
-	"key": {
-		"key": "key.origins.quinary_active",
-		"continuous": true
-	}
+	"description": "Upon gaining your 7th tail:\nSweet berries give you 15 seconds of Absorption II."
 }

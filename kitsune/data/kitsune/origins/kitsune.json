@@ -29,8 +29,9 @@
         "kitsune:berries",
         "kitsune:wolfbane",
         "kitsune:damage",
-        "kitsune:circulation"
-
+        "kitsune:circulation",
+        "kitsune:claustrophobia",
+        "kitsune:vulpine"
     ],
     "loading_priority": 10,
     "icon": "minecraft:sweet_berries",

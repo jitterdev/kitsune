@@ -4,12 +4,13 @@
         "type": "origins:delay",
         "ticks": 2,
         "action": {
-            "type": "origins:attack",
+            "type": "origins:damage",
             "amount": 2,
             "source": {
                 "name": "badRespawnPoint",
                 "unblockable": true,
-                "bypassesArmor": true
+                "bypassesArmor": true,
+                "out_of_world": true
             }
         }
     },

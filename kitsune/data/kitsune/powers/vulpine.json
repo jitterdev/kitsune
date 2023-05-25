@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:if_else_list",
+		"actions": [{
+			"condition": {
+				"type": "origins:command",
+				"command": "execute if entity @e[distance=..20,type=minecraft:fox]",
+				"comparison": ">=",
+				"compare_to": 1
+			},
+			"action": {
+				"type": "origins:execute_command",
+				"command": "/data modify entity @e[distance=..20,type=fox,limit=1] Trusted[] set from entity @p UUID"
+			}
+		}]
+	},
+	"interval": 20,
+    "name": "Vulpine",
+    "description": "Foxes will not run away from you.\nFoxes will fight for you if you're attacked, like a tamed wolf."
+}

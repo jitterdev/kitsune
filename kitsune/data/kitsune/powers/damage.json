@@ -8,7 +8,8 @@
             "source": {
                 "name": "badRespawnPoint",
                 "unblockable": true,
-                "bypassesArmor": true
+                "bypassesArmor": true,
+                "out_of_world": true
             }
         },
         "damage_condition": {

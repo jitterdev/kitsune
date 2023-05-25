@@ -20,19 +20,24 @@ kitsune
 
 ## [base (1 tail)]
 + 6 max hearts
-+ when below 4 hearts, gain an additional speed boost (+.015)
++ when below 4 hearts, gain an additional speed boost (+.02)
 + Pounce ability (2.5 second cooldown, deal increased damage during the pounce) [PRIMARY]
 + 9 slots of storage that is kept on death [DENARY]
 + No fall damage
 + Can ride other players [SECONDARY]
 + Night vision
 + Sweet berries are more nutritious
++ foxes will not run away from you.
+
 
 = 1.5 blocks tall
 
 - Hunger drains faster
 - No shields
-- your powers cost xp to use. This cost scales with the amount of tails you have. your base powers don't have an xp cost.
+- claustrophobia
+- no natural regen while sprinting
+- double kinetic damage
+- all attacks from players deal an additional half a heart of true damage
 - in the presence of wolves, you are frightened.
 - your armor toughness is half as effective.
 
@@ -47,27 +52,22 @@ kitsune
 + modifiers to your walking speed also apply while you're airborne.
 
 ## [3]
-+ wild foxes begin to recognize your status, and will fight alongside you and act as if tamed by you.
-- your powers cost more xp.
++ You can wall-jump by crouching while in contact with a wall in the air. Releasing sneak will propel you off the wall vertically.
 
 ## [4]
-+ your movements no longer alert sculk sensors
-
++ .1 multiplier to base speed.
 
 ## [5]
-+ your speed is increased. (+.1 multiplier to base speed)
-- your powers cost more xp.
++ you gain a short multidirectional dash. Activated with [QUINARY].
 
 ## [6]
-+ berries now give you absorption II for a short amount of time (15 seconds) on consumption.
++ .1 multiplier to base speed.
 
 ## [7]
-+ you gain a short multidirectional dash. Activated with [QUINARY].
-- your powers cost more xp.
++ berries now give you absorption II for a short amount of time (15 seconds) on consumption.
 
 ## [8]
-+ You can wall-jump by crouching while in contact with a wall in the air. Releasing sneak will propel you off the wall vertically.
++ .1 multiplier to base speed.
 
 ## [9]
 + If your melee attack deals less than 2 hearts of damage, strike again in 0.1 seconds, dealing a heart of true damage. 2 second cooldown.
-
