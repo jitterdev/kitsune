@@ -2,7 +2,7 @@
 
 kitsune 
 
-= every new moon, if you meet the requirements for your next tail, you will gain a tail.
+= every new moon, if you meet the requirements for your next tail, you will gain a tail. (toggle with [OCTONARY])
 
 = this only works in the overworld, because… the end and nether don’t have a moon
 
@@ -26,18 +26,15 @@ kitsune
 + Night vision
 + Sweet berries are more nutritious
 + foxes will not run away from you.
-
-
-= 1.5 blocks tall
-
+= 1.6 blocks tall
 - Hunger drains faster
 - No shields
 - claustrophobia
-- no natural regen while sprinting
+- no natural regen UNLESS sprinting
 - double kinetic damage
 - all attacks from players deal an additional half a heart of true damage
 - in the presence of wolves, you are frightened.
-- your armor toughness is half as effective.
+- armor toughness has no effect on you.
 
 (hidden):
 + Faster base speed (+.02)
@@ -47,25 +44,29 @@ kitsune
 
 
 ## [2]
-+ modifiers to your walking speed also apply while you're airborne.
++ 20% of your walking speed modifiers also apply while you're airborne.
 
 ## [3]
-+ You can wall-jump by crouching while in contact with a wall in the air. Releasing sneak will propel you off the wall vertically.
++ You can wall-jump by crouching while in contact with a wall in the air. Releasing sneak will propel you off the wall vertically. (toggle with [SEPTENARY])
++ 40% of your walking speed modifiers also apply while you're airborne.
 
 ## [4]
 + .1 multiplier to base speed.
 
 ## [5]
 + you gain a short multidirectional dash. Activated with [QUINARY].
++ 60% of your walking speed modifiers also apply while you're airborne.
 
 ## [6]
 + .1 multiplier to base speed.
 
 ## [7]
 + berries now give you absorption II for a short amount of time (15 seconds) on consumption.
++ 80% of your walking speed modifiers also apply while you're airborne.
 
 ## [8]
 + .1 multiplier to base speed.
 
 ## [9]
 + If your melee attack deals less than 2 hearts of damage, strike again in 0.1 seconds, dealing a heart of true damage. 2 second cooldown.
++ 100% of your walking speed modifiers also apply while you're airborne.

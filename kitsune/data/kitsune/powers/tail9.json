@@ -1,23 +1,32 @@
 {
-    "type": "origins:action_on_hit",
-    "bientity_action": {
-        "type": "origins:delay",
-        "ticks": 2,
-        "action": {
-            "type": "origins:damage",
-            "amount": 2,
-            "source": {
-                "name": "badRespawnPoint",
-                "unblockable": true,
-                "bypassesArmor": true,
-                "out_of_world": true
+    "type": "origins:multiple",
+    "truedmg": {
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:delay",
+            "ticks": 2,
+            "action": {
+                "type": "origins:damage",
+                "amount": 2,
+                "source": {
+                    "name": "badRespawnPoint",
+                    "unblockable": true,
+                    "bypassesArmor": true,
+                    "out_of_world": true
+                }
             }
-        }
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": "<=",
+            "compare_to": 4
+        },
+        "cooldown": 40
     },
-    "damage_condition": {
-        "type": "origins:amount",
-        "comparison": "<=",
-        "compare_to": 4
-    },
-    "cooldown": 40
+    "airborne": {
+        "type": "origins:attribute_modify_transfer",
+        "class": "modify_air_speed",
+        "attribute": "minecraft:generic.movement_speed",
+        "multiplier": 1.0
+    }
 }
